@@ -60,6 +60,26 @@
 			],
 			"group": "build",
 			"detail": "compilador: /usr/bin/g++-12"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe compilar archivo activo",
+			"command": "C:\\MinGW\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilador: C:\\MinGW\\bin\\g++.exe"
 		}
 	]
 }
